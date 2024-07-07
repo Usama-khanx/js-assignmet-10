@@ -17,10 +17,56 @@ for(var i=0; i<arr.length; i++){
     }
 }
 console.log(smallestValue)
+
+
 // 7. CONVERT CELCIUS TO FAHRENHEIT
+
+// 0  Degree Celsius =  32 Fahrenheit
+// Formula	
+// (0°C × 9/5) + 32 = 32°F
+
 
 // 8. CONVERT FAHRENHEIT TO CELCIUS
 
+
+// Temperature 8 Fahrenheit = -13.3333 Degree Celsius
+// Formula	
+// (8°F − 32) × 5/9 = -13.33°C
+
+
 // 9. REVERSE AN ARRAY
 
+var revreseArray = [];
+for(i=0; i<5; i++){
+    var toreverseInputArray = +prompt("Enter 5 numbers to creat its array and then reverse it")
+    revreseArray.push(toreverseInputArray)
+}
+console.log(revreseArray)
+
+// Yeh by default method hai lets we are try to with loops
+//console.log(revreseArray.reverse())
+
+var reviviv = [];
+for(var j = revreseArray.length-1; j >=  0; j--){
+    reviviv[j] = revreseArray[j] 
+    console.log(reviviv[j])
+}
+
 // 10. CALCULATE AVERAGE OF AN ARRAY
+
+var arrayAverage = [];
+for(var i=0; i<5; i++){
+    var inp = +prompt("Enter 5 number to create an array and find its average")
+    arrayAverage.push(inp)
+}
+console.log(arrayAverage)
+
+var sum = 0;
+var avg = 1;
+for(var i=0; i<arrayAverage.length; i++){
+    sum = sum + arrayAverage[i]
+    avg = avg + arrayAverage[i] / arrayAverage.length;
+}
+
+console.log(sum)
+console.log(avg)
